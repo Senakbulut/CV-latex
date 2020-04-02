@@ -1,0 +1,204 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Sena}{AKBULUT}{}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.26}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{sena.jpg}
+\end{center}
+
+
+
+\bg{cvgreen}{white}{Kişisel} \\[0.5em]
+Sena AKBULUT
+
+Doğum T: 17.11.1998
+
+Telno: 05343292572
+
+Adres: Üniversite mah.
+Ortahisar/Trabzon
+  
+\vspace{3em}
+\bg {cvgreen}{white}{Hakkımda}\\[0.5em]
+Karadeniz Teknik Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Kendimi geliştirmek için yeni deneyimler öğrenmeye açığım.
+
+\vspace{4em}
+
+\bg{cvgreen}{white}{İlgi Alanları} \\[0.5em]
+Veri Tabanı,
+
+
+Deep Learning,
+
+
+Mchine Learning,
+
+
+Web Programlama
+
+
+
+\vspace{4em}
+
+\infobubble{\faAt}{cvgreen}{white}{senaakbulut16@gmail.com}
+\infobubble{\faLinkedin}{cvgreen}{white}{senaakbulut}
+\infobubble{\faGithub}{cvgreen}{white}{Senakbulut}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Eğitim Bilgileri}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2016-halen}{Karadeniz Teknik Üniversitesi}{TRABZON}{
+    }{Lisans,Bilgisayar Mühendisliği 3.sınıf,
+    
+    
+    Akademik başarı:2,62
+    
+    }{ktu.jpg} \\
+    \cvevent{2012-2016}{Borsa İstanbul İslahiye Fen Lisesi}{GAZİANTEP/İSLAHİYE}{}{Diploma Notu: 92}{meb.jpg}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Sertifikalar}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{Şubat 2020}{Neural Networks And Deep Learning}{Certificates}{Coursera}{ }{ } \\
+    \cvdegree{Şubat 2019}{PostgreSQL}{Mustafa Özgür Yazılım kış kampı}{}
+    {}{} \\
+    \cvdegree{Ağustos 2019}{GNU/Linux sistem yönetimi 1.0}{Mustafa Özgür Yazılım yaz kampı}{}{}{}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Programlama}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{SQL} &  \barrule{0.4}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{C} & \barrule{0.55}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{C++} & \barrule{0.5}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Python} & \barrule{0.25}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.15}{0.5em}{cvpurple} \\
+\end{tabular}
+\end{minipage}
+
+\section*{Kişisel Özellikler}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \emph{Sosyal} \\
+   \emph{Takım çalışmalarına uyumlu} \\
+   \emph{Analitik ve yaratıcı düşünebilen} \\
+   \emph{Öğrendiklerini kolay uygulayabilen}
+\end{tabular}
+\vspace{3em}
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{İşletim Sistemleri}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+     {\textbf{MacOS}\includegraphics[scale=0.40]{4stars.jpg} \\
+    \textbf{Windows}\includegraphics[scale=0.40]{4stars.jpg} \\
+    \textbf{GNU/Linux}\includegraphics[scale=0.40]{2stars.jpg}}
+
+\end{tabular}
+\bigskip
+
+\section*{DİLLER}
+\begin{tabular}{l | ll}
+\textbf{Türkçe} & C2 & {\phantom{x}\footnotesize ana dil} \\
+\textbf{İngilizce} & B2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+\textbf{Almanca} & A1 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} 
+
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Etkinlikler}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+   \emph{Kodla-2019} \\
+   \emph{Kodla-2018} \\
+   \emph{DjangoGirls} \\
+   \emph{GDGTrabzon}
+\end{tabular}
+\bigskip
+
+\section*{Projeler}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+     \emph{-> C++'da matris işlemleri yapan hesaplayıcı} \\
+     \emph{-> C++'da randevu sistemi}
+\end{tabular}
+\end{minipage}
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+
+
+
+\end{paracol}
+
+\end{document}
